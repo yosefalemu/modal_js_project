@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 80%;
+    height: 40%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+.hero .banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.hero .banner h1{
+    font-size: 50px;
+}
+.hero .banner .btn-modal{
+    margin-top: 15%;
+    padding: 5%;
+    background-color: rgba(3, 3, 226, 0.74);
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+}
+
+/* css for the modal content  */
+.modal-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 80%;
+    height: 40%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    z-index: -1;
+}
+/* css to show the .modal-overlay class for html2 and app2  */
+.show-modal-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 80%;
+    height: 40%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+}
+.modal-container{
+    position: relative;
+}
+/* css to show the .modal-overlay class for html2 and app2  */
+.modal-container{
+    position: relative;
+}
+.modal-container h3{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.modal-container button{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+}
+
+
+
+/* css for the smaller size */
+@media(max-width: 760px){
+    .hero .banner h1{
+        font-size: 30px;
+    }
+}
+
+    
